@@ -1,0 +1,859 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Conteúdo Extra</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 237, 214, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 237, 214, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(249, 228, 188, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="57e2ee01-f646-4080-a7e3-94d1e772fafc" class="page sans"><header><img class="page-cover-image" src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?ixlib=rb-4.0.3&amp;q=85&amp;fm=jpg&amp;crop=entropy&amp;cs=srgb" style="object-position:center 50%"/><div class="page-header-icon page-header-icon-with-cover"><span class="icon">⌨️</span></div><h1 class="page-title">Conteúdo Extra</h1><p class="page-description"></p></header><div class="page-body"><p id="cd2d115f-812d-45fb-9d35-c08333a1a9e0" class="">
+</p><p id="2ec3e79a-2c48-4e6b-b712-25203723fd99" class="">Esses são alguns conteúdos que eu acho interessante que você tenha domínio ou pelo menos contato antes de mergulhar em projetos com React + Typescript + Redux ToolKit.</p><h2 id="6ed8650c-03d0-4195-adf3-1e06e0638677" class="">Conteúdo externo</h2><h3 id="6261afef-b549-45e8-a262-f23d88c022c8" class="">HTML</h3><figure id="ae073d07-cb47-4990-bd92-7dfccb16e547"><a href="https://youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&amp;si=_8gVG0Y_7HZraTRS" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Curso completo e atual de HTML5 e CSS3 - Módulo 1 de 5</div><div class="bookmark-description">Faça agora mesmo o Curso de HTML5 e CSS3 do Professor Gustavo Guanabara, com aulas atualizadas e com material de apoio em PDF.</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/bf8c00d7/img/favicon_144x144.png" class="icon bookmark-icon"/>https://youtube.com/playlist?list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&amp;si=_8gVG0Y_7HZraTRS</div></div><img src="https://i.ytimg.com/vi/Ejkb_YpuHWs/hqdefault.jpg" class="bookmark-image"/></a></figure><h3 id="b5f5a966-4214-41e5-ba45-ae1e0d234dbd" class="">CSS</h3><figure id="0110fa15-1be8-407e-98dd-a6be0f93d6a9"><a href="https://triangulo.dev/guia-de-estudos-css/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Guia de Estudos CSS</div><div class="bookmark-description">Guia completo de estudos para te ajudar a finalmente aprender CSS do zero</div></div><div class="bookmark-href"><img src="https://triangulo.dev/apple-touch-icon.png?v=1" class="icon bookmark-icon"/>https://triangulo.dev/guia-de-estudos-css/</div></div><img src="https://triangulo.dev/images/guia-de-estudos-css/social.png" class="bookmark-image"/></a></figure><h3 id="59d233f2-01b6-48c9-b24d-6d10368f600c" class="">JavaScript</h3><figure id="bb15e9e2-bdad-4aa3-aa5f-50df60e6f261"><a href="https://www.youtube.com/watch?v=hdI2bqOjy3c" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">JavaScript Crash Course For Beginners</div><div class="bookmark-description">In this crash course we will go over the fundamentals of JavaScript including more modern syntax like classes, arrow functions, etc. This is the starting point on my channel for learning JS.
+
+Code including html/css:
+https://embed.plnkr.co/plunk/8ujYdL1BxZftGoS4Cf14
+
+21 Hour JavaScript Course:
+https://www.udemy.com/modern-javascript-from-the-beginning/?couponCode=TRAVERSYMEDIA
+
+Suggested Videos To Watch Next:
+DOM Crash Course - https://www.youtube.com/watch?v=0ik6X4DJKCc
+Fetch API - https://www.youtube.com/watch?v=Oive66jrwBs
+JS Playlist With Projects - https://www.youtube.com/watch?v=vEROU2XtPR8&amp;list=PLillGF-RfqbbnEGy3ROiLWk7JMCuSyQtX
+OOP Crash Course - https://www.youtube.com/watch?v=vDJpGenyHaA
+JSON Crash Course - https://www.youtube.com/watch?v=wI1CWzNtE-M
+
+
+
+💖 Become a Patron: Show support &amp; get perks!
+http://www.patreon.com/traversymedia
+
+Follow Traversy Media:
+https://www.facebook.com/traversymedia
+https://www.twitter.com/traversymedia
+https://www.instagram.com/traversymedia</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/bf8c00d7/img/favicon_144x144.png" class="icon bookmark-icon"/>https://www.youtube.com/watch?v=hdI2bqOjy3c</div></div><img src="https://i.ytimg.com/vi/hdI2bqOjy3c/maxresdefault.jpg" class="bookmark-image"/></a></figure><figure id="108bc136-26eb-474e-9332-15989f364123"><a href="https://www.youtube.com/watch?v=L5keyLvGDiY" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Guia Prático: O Que e Como Estudar na Documentação</div><div class="bookmark-description">Neste vídeo, você aprenderá como estudar de forma eficaz a documentação do JavaScript utilizando os recursos da MDN (Mozilla Developer Network) e uma ferramenta inovadora de inteligência artificial chamada Phind. Vou mostrar como navegar pela documentação, entender exemplos de código e utilizar a IA para esclarecer dúvidas complexas.
+
+Além disso, abordarei como criar e seguir roadmaps personalizados para guiar seu aprendizado e aprimorar suas habilidades em desenvolvimento full stack. Se você quer melhorar sua compreensão de JavaScript e aproveitar ao máximo os recursos disponíveis, este vídeo é para você!
+
+O que você vai encontrar neste vídeo:
+
+- Introdução à MDN: Como navegar e usar a documentação de JavaScript.
+- Utilizando Phind: Como a inteligência artificial pode ajudar a entender códigos.
+- Estruturação de Roadmaps: Dicas para criar e seguir planos de estudo eficientes.</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/bf8c00d7/img/favicon_144x144.png" class="icon bookmark-icon"/>https://www.youtube.com/watch?v=L5keyLvGDiY</div></div><img src="https://i.ytimg.com/vi/L5keyLvGDiY/maxresdefault.jpg" class="bookmark-image"/></a></figure><h3 id="36c34f6f-3ff0-4a1e-8029-5d0b04a9abdb" class="">Typescript</h3><figure id="d3727f7d-345c-4263-8d5c-06dac339176b"><a href="https://youtu.be/BCg4U1FzODs?si=HsDdz1-pkVmGIHZA" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">TypeScript Crash Course</div><div class="bookmark-description">Learn the basics of TypeScript in this beginner-friendly crash course
+
+Visit Our Sponsor: Stream
+https://getstream.io/traversy
+
+TypeScript Gist:
+https://gist.github.com/bradtraversy/f80a4cd87e7034bea5264f7d8c431b4e
+
+Find all of my Udemy courses:
+https://traversymedia.com
+
+Support The Channel:
+https://www.patreon.com/traversymedia
+https://paypal.me/traversymedia
+
+TImestamps:
+0:00 - Intro &amp; Sponsor
+0:39 - Slides
+7:58 - TypeScript Setup
+8:55 - TSC (TypeScript Compiler)
+11:42 - Config File
+13:32 - Folder Structure
+16:50 - Basic Types
+18:03 - Arrays &amp; Tuples
+21:27 - Unions &amp; Enum
+24:30 - Objects
+26:00 - Type Assertion
+27:23 - Functions
+29:54 - Interfaces
+32:28 - Function Interface
+33:49 - Classes
+37:00 - Data Modifiers
+39:20 - Implement Interface in Class
+40:39 - Extending Classes (Subclasses)
+43:27 - Generics
+47:30 - TypeScript With React</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/ef8ce500/img/favicon_144x144.png" class="icon bookmark-icon"/>https://youtu.be/BCg4U1FzODs?si=HsDdz1-pkVmGIHZA</div></div><img src="https://i.ytimg.com/vi/BCg4U1FzODs/maxresdefault.jpg" class="bookmark-image"/></a></figure><h3 id="f97bee5e-2e02-42d8-8086-a7d2f5576daf" class="">React</h3><figure id="b1c47d65-322f-4d0f-97c7-3f382925133d"><a href="https://www.youtube.com/watch?v=LDB4uaJ87e0" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">React Crash Course 2024</div><div class="bookmark-description">Learn the basics of React, such as components, props, state, data fetching, and more, while building a job listing frontend.
+
+Code:
+https://github.com/bradtraversy/react-crash-2024
+
+React Front To Back Full Course:
+https://www.traversymedia.com/Modern-React-Front-To-Back-Course
+
+Check out all my courses:
+https://traversymedia.com
+
+Social Media:
+Github - https://github.com/bradtraversy
+Twitter - https://twitter.com/traversymedia
+Instagram - https://www.instagram.com/traversymedia
+Facebook - https://www.facebook.com/traversymedia
+Linkedin - https://www.linkedin.com/in/bradtraversy
+
+Timestamps:
+
+0:00 - Intro
+1:55 - What Is React? (Slide)
+3:43 - Why React? (Slide)
+7:19 - What Are Components? (Slide)
+8:21 - What Is State? (Slide)
+10:00 - What Are Hooks? (Slide)
+11:17 - What Is JSX? (Slide)
+12:42 - SPA, SSR, SSG (Slide)
+15:38  - Vite (Slide)
+16:30 - Project Demo
+19:53 - Setup React With Vite
+22:29 - File Explanation
+25:11 - Boilerplate Cleanup
+26:48 - Tailwind CSS Setup
+30:24 - JSX Crash Course
+39:37 - Start Homepage 
+42:00 - Navbar Component
+43:56 - Image Import
+45:24 - Hero Component
+46:17 - Props
+48:00 - Default Props
+48:51 - Wrapper Components
+55:14 - JobListings Component
+58:50 - Create Lists With map()
+1:03:20 - Single JobListing Component
+1:05:49 - Limit Jobs to 3
+1:07:50 - useState() Hook &amp; Desc Toggle
+1:13:07 - Creating an Event
+1:14:20 - Updating Component State
+1:16:00 - React Icons Package
+1:18:00 - React Router Setup
+1:20:21 - Create Routes From Elements
+1:21:36 - Router Provider
+1:22:36 - Homepage Component/Route
+1:24:40 - Layouts
+1:29:06 - Jobs Page Component/Route
+1:30:50 - Link Component
+1:34:20 - Custom 404 Page
+1:36:55 - Active Links With NavLink
+1:41:00 - Conditional Rendering
+1:43:10 - JSON Server Setup
+1:47:00 - useEffect() &amp; Data Fetching
+1:53:07 - Loading Spinner
+1:51:06 - Conditional Fetching
+1:59:45 - Proxying
+2:03:38 - Single Job Page
+2:09:04 - useParams() to Get ID
+2:12:25 - Data Loaders
+2:16:36 - Single Job Output
+2:22:00 - Add Job Page
+2:23:40 - Working With Forms
+2:30:05 - Form Submission
+2:35:27 - Pass Function as Prop
+2:39:32 - POST Request to Add Job
+2:41:45 - Delete Job Button/function
+2:45:12 - DELETE Request to Remove Job
+2:46:50 - React Toastify Package
+2:50:08 - Edit Job Page/Form
+2:56:05 - Update Form Submission
+2:58:54 - PUT Request to Update Job
+3:02:10 - Build Static Assets For Production</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/bf8c00d7/img/favicon_144x144.png" class="icon bookmark-icon"/>https://www.youtube.com/watch?v=LDB4uaJ87e0</div></div><img src="https://i.ytimg.com/vi/LDB4uaJ87e0/maxresdefault.jpg" class="bookmark-image"/></a></figure><h3 id="33c477c4-3648-4a9c-93bb-717936e1f9ec" class="">Tailwind CSS</h3><p id="15bb0b03-1515-4c31-806e-62032dc566a4" class="">
+</p><figure id="fbc79780-2b0e-4d80-8e57-75e1a75b3d11"><a href="https://www.youtube.com/watch?v=1eLaBow7Zbo&amp;list=PLcoYAcR89n-r1m-tMfV4qndrRWpT_rb9u" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Curso gratuito Tailwind CSS #1 - Introdução e instalação</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/bf8c00d7/img/favicon_144x144.png" class="icon bookmark-icon"/>https://www.youtube.com/watch?v=1eLaBow7Zbo&amp;list=PLcoYAcR89n-r1m-tMfV4qndrRWpT_rb9u</div></div><img src="https://i.ytimg.com/vi/1eLaBow7Zbo/maxresdefault.jpg" class="bookmark-image"/></a></figure><figure id="548835fc-370a-4849-be83-204101452eef"><a href="https://www.youtube.com/watch?v=UBOj6rqRUME" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">Tailwind CSS Crash Course</div><div class="bookmark-description">Updated 2022 Crash Course - https://youtu.be/dFgzHOX84xQ
+
+In this video we will look at the TailwindCSS utility framework including what it is, setup and creating custom components with utilities
+
+Code:
+https://codepen.io/bradtraversy/pen/JgXqBL
+
+Sponsor: DevMountain Bootcamp
+https://goo.gl/6q0dEa
+
+Docs:
+https://tailwindcss.com
+
+Mac Install:
+https://docs.mongodb.com/manual/tutorial/install-mongodb-on-os-x/
+
+💖 Become a Patron: Show support &amp; get perks!
+http://www.patreon.com/traversymedia
+
+Udemy Courses:
+https://www.traversymedia.com
+
+Follow Traversy Media:
+https://www.facebook.com/traversymedia
+https://www.twitter.com/traversymedia
+https://www.instagram.com/traversymedia</div></div><div class="bookmark-href"><img src="https://www.youtube.com/s/desktop/bf8c00d7/img/favicon_144x144.png" class="icon bookmark-icon"/>https://www.youtube.com/watch?v=UBOj6rqRUME</div></div><img src="https://i.ytimg.com/vi/UBOj6rqRUME/maxresdefault.jpg" class="bookmark-image"/></a></figure><h2 id="ced12e6d-2387-424c-871e-b8db6d6db6a3" class="">Conteúdo EBAC</h2><p id="87cf9b1c-a8f0-4b20-9775-892542a60c02" class="">
+</p><figure id="c3b93d26-dd6b-4ada-8166-87ae5b018ccf"><a href="https://ebaconline.com.br/webinars/progamacao-maratona-2022-10-10-11" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">EBAC Maratona: 2 dias para iniciar sua carreira em Front-end</div><div class="bookmark-description">Participe do evento &quot;2 dias para iniciar sua carreira em Front-end&quot;, ebaconline.com.br</div></div><div class="bookmark-href"><img src="https://ebaconline.com.br/apple-touch-icon.png" class="icon bookmark-icon"/>https://ebaconline.com.br/webinars/progamacao-maratona-2022-10-10-11</div></div><img src="https://ebaconline.com.br/upload/cms/iGt39eKYzCD33nU8hmN4y/1200x630.jpeg" class="bookmark-image"/></a></figure><figure id="e962f2e5-630e-4a92-98ea-7d7120b5cadd"><a href="https://ebaconline.com.br/webinars/programacao-maratona-2022-05-10-11-12" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">EBAC Maratona: Front-end para quem quer começar agora!</div><div class="bookmark-description">Participe do evento &quot;Front-end para quem quer começar agora!&quot;, ebaconline.com.br</div></div><div class="bookmark-href"><img src="https://ebaconline.com.br/apple-touch-icon.png" class="icon bookmark-icon"/>https://ebaconline.com.br/webinars/programacao-maratona-2022-05-10-11-12</div></div><img src="https://ebaconline.com.br/upload/cms/JGNU9H969kzfeyPampAwy/1200x630.jpeg" class="bookmark-image"/></a></figure><figure id="5e29f4ca-2a18-4743-b3a2-563f37d17267"><a href="https://ebaconline.com.br/webinars/programacao-demo-2022-02-24" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">EBAC Demonstração: Um guia para começar como front-end</div><div class="bookmark-description">Participe do evento &quot;Um guia para começar como front-end&quot;, ebaconline.com.br</div></div><div class="bookmark-href"><img src="https://ebaconline.com.br/apple-touch-icon.png" class="icon bookmark-icon"/>https://ebaconline.com.br/webinars/programacao-demo-2022-02-24</div></div><img src="https://ebaconline.com.br/upload/cms/KYJyDWnnYdjfCpzVQhQYR/1200x630.jpeg" class="bookmark-image"/></a></figure><figure id="9caa8f30-1dfd-46dd-a5d8-f4a438d108fc"><a href="https://ebaconline.com.br/webinars/intern-prog-webinar-2023-02-22" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">EBAC Webinar: Debug - como depurar códigos Javascript</div><div class="bookmark-description">Participe do evento &quot;Debug - como depurar códigos Javascript&quot;, ebaconline.com.br</div></div><div class="bookmark-href"><img src="https://ebaconline.com.br/apple-touch-icon.png" class="icon bookmark-icon"/>https://ebaconline.com.br/webinars/intern-prog-webinar-2023-02-22</div></div><img src="https://ebaconline.com.br/upload/cms/BUeRPgiHwWEtyJXe6mrbE/1200x630.jpeg" class="bookmark-image"/></a></figure><figure id="9e9daa13-25cf-4b8d-a5a5-ec4b4eec9d1d"><a href="https://ebaconline.com.br/webinars/programacao-workshop-2022-08-09-10-11" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">EBAC Workshop: Primeiros passos com React : 3 dias de imersão!</div><div class="bookmark-description">Participe do evento &quot;Primeiros passos com React : 3 dias de imersão!&quot;, ebaconline.com.br</div></div><div class="bookmark-href"><img src="https://ebaconline.com.br/apple-touch-icon.png" class="icon bookmark-icon"/>https://ebaconline.com.br/webinars/programacao-workshop-2022-08-09-10-11</div></div><img src="https://ebaconline.com.br/upload/cms/UWp8hRr6y7CxJB6Lttzrm/1200x630.jpeg" class="bookmark-image"/></a></figure><figure id="3aae5e51-12bf-4de8-a662-301e58eca33d"><a href="https://ebaconline.com.br/webinars/intern-prog-webinar-2023-05-08" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title">EBAC Webinar: Revisão ao vivo: React</div><div class="bookmark-description">Participe do evento &quot;Revisão ao vivo: React&quot;, ebaconline.com.br</div></div><div class="bookmark-href"><img src="https://ebaconline.com.br/apple-touch-icon.png" class="icon bookmark-icon"/>https://ebaconline.com.br/webinars/intern-prog-webinar-2023-05-08</div></div><img src="https://ebaconline.com.br/upload/cms/gbKyhPQggQm98drpF3z4p/1200x630.jpeg" class="bookmark-image"/></a></figure><p id="511f8eb3-87ab-40b5-a79c-fdb92c77e47c" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
